@@ -1,0 +1,83 @@
+$color-green: rgb(20, 166, 166);
+
+.header-top {
+  padding-top: 0.5em;
+  background: #067c8582;
+  height: 70px;
+  position: relative;
+  .sosmed {
+    justify-content: space-between;
+    display: flex;
+    .follow-us {
+      display: flex;
+      margin-right: 8em;
+      margin-left: 8em;
+      gap: 1rem;
+      font-size: 0.9em;
+      color: white;
+    }
+    .sign-in {
+      display: flex;
+      gap: 2em;
+      margin-right: 8em;
+      color: white;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.header-wrapper {
+  min-width: 90%;
+  margin: auto;
+  margin-top: -2em;
+}
+.header {
+  position: absolute;
+  background: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  height: 5em;
+  align-items: center;
+  padding: 2em;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+
+  .logo-icon {
+    font-size: 24px;
+    p {
+      color: rgb(92, 88, 88);
+    }
+    .logo {
+      color: $color-green;
+      font-size: 1.3em;
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .nav ul {
+    color: gray;
+    display: flex;
+    gap: 1em;
+    list-style: none;
+  }
+
+  .nav li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(58, 56, 53);
+    &:hover {
+      color: $color-green;
+    }
+  }
+
+  .icon {
+    display: flex;
+    gap: 2em;
+  }
+}

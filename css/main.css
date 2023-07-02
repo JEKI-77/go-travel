@@ -1,0 +1,126 @@
+.footer {
+  background: #121723;
+  height: 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #cac3c3;
+  font-size: 14px;
+}
+.footer .col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 400px;
+}
+.footer h3 {
+  color: white;
+  font-size: 1.5em;
+}
+.footer .logo {
+  color: rgb(20, 166, 166);
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 5rem;
+}
+
+.header-top {
+  padding-top: 0.5em;
+  background: rgba(6, 124, 133, 0.5098039216);
+  height: 70px;
+  position: relative;
+}
+.header-top .sosmed {
+  justify-content: space-between;
+  display: flex;
+}
+.header-top .sosmed .follow-us {
+  display: flex;
+  margin-right: 8em;
+  margin-left: 8em;
+  gap: 1rem;
+  font-size: 0.9em;
+  color: white;
+}
+.header-top .sosmed .sign-in {
+  display: flex;
+  gap: 2em;
+  margin-right: 8em;
+  color: white;
+  font-size: 0.9em;
+}
+
+.header-wrapper {
+  min-width: 90%;
+  margin: auto;
+  margin-top: -2em;
+}
+
+.header {
+  position: absolute;
+  background: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  height: 5em;
+  align-items: center;
+  padding: 2em;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+.header .logo-icon {
+  font-size: 24px;
+}
+.header .logo-icon p {
+  color: rgb(92, 88, 88);
+}
+.header .logo-icon .logo {
+  color: rgb(20, 166, 166);
+  font-size: 1.3em;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.header .nav ul {
+  color: gray;
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+.header .nav li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(58, 56, 53);
+}
+.header .nav li a:hover {
+  color: rgb(20, 166, 166);
+}
+.header .icon {
+  display: flex;
+  gap: 2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(218, 231, 241);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}/*# sourceMappingURL=main.css.map */

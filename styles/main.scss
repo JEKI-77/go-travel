@@ -1,0 +1,20 @@
+@import "../partials/footer";
+@import "../partials//content";
+@import "../partials//header";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(218, 231, 241);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
