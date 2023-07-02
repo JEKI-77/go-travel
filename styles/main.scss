@@ -2,19 +2,25 @@
 @import "../partials//content";
 @import "../partials//header";
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body{
-  background-color: rgb(218, 231, 241);
+body, html {
+  background-color: white;
+  scroll-behavior: smooth;
 }
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+}
+
+.button {
+  background: #2ea295;
+  color: white;
+  padding: 0.5em 2em;
+  border: none;
 }

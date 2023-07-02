@@ -1,11 +1,15 @@
 $color-green: rgb(20, 166, 166);
 
 .header-top {
-  padding-top: 0.5em;
+  
+  padding-top: 5em;
   background: #067c8582;
-  height: 70px;
-  position: relative;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+
   .sosmed {
+    margin-top: -4.5em;
     justify-content: space-between;
     display: flex;
     .follow-us {
@@ -27,11 +31,13 @@ $color-green: rgb(20, 166, 166);
 }
 
 .header-wrapper {
-  min-width: 90%;
-  margin: auto;
-  margin-top: -2em;
+  position: fixed;
+  margin-left: 6em;
+  min-width: 100%;
+  margin-top: 3em;
 }
 .header {
+  z-index: 1;
   position: absolute;
   background: aliceblue;
   display: flex;
