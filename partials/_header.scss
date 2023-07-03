@@ -3,7 +3,7 @@ $color-green: rgb(20, 166, 166);
 .header-top {
   
   padding-top: 5em;
-  background: #067c8582;
+  background: $color-green;
   height: 80px;
   width: 100%;
   position: fixed;
