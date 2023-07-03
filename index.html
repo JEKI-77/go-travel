@@ -9,19 +9,23 @@
   </head>
   <body>
     <div class="container" id="home">
+
       <!-- header -->
       <div class="header-top">
         <div class="sosmed">
           <div class="follow-us">
             <p>folow us:</p>
-              <img src="/asset/icon/ig.png" alt="" srcset="">
-              <img src="/asset/icon/fb.png" alt="" srcset="">
-              <img src="/asset/icon/twitter1.png" alt="" srcset="">
+              <img src="/asset/icon/ig.png" alt="">
+              <img src="/asset/icon/fb.png" alt="">
+              <img src="/asset/icon/twitter1.png" alt="">
               <img style="margin-left: 1em;" src="/asset/icon/tel.png" alt="">
             <span>0822-30333</span>
           </div>
           <div class="sign-in">
-            <p>ENGLISH</p>
+            <select style="border: none; background:rgb(20, 166, 166); color: white;" >
+              <option>ENGLISH</option>
+              <option>INDONESIA</option>
+            </select>
             <p>SIGN IN</p>
           </div>
         </div>
@@ -48,17 +52,15 @@
       <!-- content -->
       <div class="content">
         <div class="hero">
-          <img src="asset/images/fuji.jpg" alt="" srcset="" />
-
-          
+          <img src="asset/images/fuji.jpg" alt="" />
             <div class="search" id="destination">
-            <input type="text" placeholder="WHERE TO" /><span >|</span>
-            <input type="text" placeholder="MONTH" /><span>|</span>
+            <input type="text" placeholder="WHERE TO" />
+            <input type="text" placeholder="MONTH" />
             <input type="text" placeholder="TRAVEL TYPE" />
             <button class="button">FIND NOW</button>
           </div>
-        
         </div >
+        
         <div class="discount"  >
           <div class="grid-full" >
             <h2>Top Destination</h2>
@@ -66,76 +68,80 @@
           </div>
           <div class="box grid-wide grid-tall" >
             <span class="title" style="margin-top:300px;">Jepang</span>
-            <img class="one" src="asset/images/fuji.jpg" alt="" srcset="" /></div>
+            <img class="one" src="asset/images/fuji.jpg" alt="" /></div>
           <div class="text grid-wide">
             <h3>DEAL & DISCOUNT</h3>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, et?
           </div>
           <div class=" box grid-tall">
             <span class="title">indonesia</span>
-            <img class="two" src="asset/images/ampat.jpg" alt="" srcset=""/>
+            <img class="two" src="asset/images/ampat.jpg" alt="indonesia"/>
           </div>
           <div class="box">
             <span class="title">Australia</span>
-            <img src="asset/images/australia.jpeg" alt="" srcset="" />
+            <img src="asset/images/australia.jpeg" alt="australia" />
           </div>
           <div class="box">
             <span class="title">Turkey</span>
-            <img src="asset/images/turkey.jpeg" alt="" srcset=""/>
+            <img src="asset/images/turkey.jpeg" alt="turkey"/>
           </div>
           <div class="box">
             <span class="title">China</span>
-            <img src="asset/images/china.jpeg" alt="" srcset="" />
+            <img src="asset/images/china.jpeg" alt="china" />
           </div>
           <div class="box">
             <span class="title">England</span>
-            <img src="asset/images/england.jpeg" alt="" srcset="" />
+            <img src="asset/images/england.jpeg" alt="england" />
           </div>
           <div class=" box grid-wide">
             <span class="title">Korea</span>
-            <img src="asset/images/korea.jpg" alt="" srcset="" />
+            <img src="asset/images/korea.jpg" alt="korea" />
           </div>
           <div class="box" >
             <span class="title">Singapura</span>
-            <img  src="asset/images/singapura.jpg" alt="" srcset="" />
+            <img  src="asset/images/singapura.jpg" alt="singapura" />
           </div>
           <div class="box">
             <span class="title">Malaysia</span>
-            <img src="asset/images/malaysia.jpg" alt="" srcset="" />
+            <img src="asset/images/malaysia.jpg" alt="malaysia" />
           </div>
         </div>
         <!-- packages -->
        <div class="packages-container" id="packages">
-    
         <div class="col-1">
           <h2>Special packgaes</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolorum</p>
         </div>
-        <!-- card 1 -->
-        <div class="col-2">
-          <img src="asset/images//australia.jpeg" alt="">
-          <div class="price">
-            <h3>Australia</h3>
-            <span>$499</span>
-          </div>
-          
-          <div class="desciption">
-            <p>> Days 6 Night</p>
-            <p>Tranfortation</p>
-            <p>> 5 Start Accomodation</p>
-            <p>> Food Facilities</p>
-          </div>
-          <div class="review">
-            <span>⭐️⭐️⭐️⭐️ 2644 Review</span>
-          </div>
-        <div>
-          <button class="button-card">Book Now</button>
+
+        <div class="card">
+          <!-- card 1 -->
+      <div class=" card-1">
+        <img src="asset/images/australia.jpeg" alt="">
+       <div class="price">
+          <h3>Australia</h3>
+          <span>$499</span>
         </div>
+        
+        <div class="desciption">
+          <p>> Days 6 Night</p>
+          <p>Tranfortation</p>
+          <p>> 5 Start Accomodation</p>
+          <p>> Food Facilities</p>
+        </div>
+        <div class="review">
+          <span>⭐️⭐️⭐️⭐️ 2544 Review</span>
+        </div>
+      <div>
+        <button class="button-card">Book Now</button>
       </div>
+    </div>
+
+       
+      
       <!-- card 2 -->
-      <div class="col-2">
+      <div class=" card-2">
         <img src="asset/images/ampat.jpg" alt="">
-        <div class="price">
+       <div class="price">
           <h3>Indonesia</h3>
           <span>$499</span>
         </div>
@@ -154,7 +160,7 @@
       </div>
     </div>
     <!-- card 3 -->
-    <div class="col-2">
+    <div class="card-3">
       <img src="asset/images/england.jpeg" alt="">
       <div class="price">
         <h3>England</h3>
@@ -174,14 +180,13 @@
       <button class="button-card">Book Now</button>
     </div>
   </div>
-  <!-- card 1 -->
-  <div class="col-2">
+  <!-- card 4 -->
+  <div class="card-4">
     <img src="asset/images/korea.jpg" alt="">
     <div class="price">
       <h3>Korea</h3>
       <span>$499</span>
     </div>
-    
     <div class="desciption">
       <p>> Days 6 Night</p>
       <p>Tranfortation</p>
@@ -195,25 +200,27 @@
     <button class="button-card">Book Now</button>
   </div>
 </div>
-     </div>
-        <!--Subcription -->
-        <div class="sub-container" id="subcribe">
-          <div class="content">
-          <div class="title">
-            <p>Join Our Subcribers List To Get Reguler Update</p>
-            <span>Subcribe Now. We Will send Best offer for your Trip</span>
-          </div>
-          <div class="input-email" >
-            <input type="text" placeholder="Enter your Email Here">
-            <button class="button-sub">Subcribe</button>
-          </div>
-          </div>
-        </div>
-        </div>
-      
-      
 
-      <!-- footer -->
+</div>
+
+     </div>
+     
+        </div>
+
+         <!--Subcription -->
+ <div class="sub-container" id="subcribe">
+  <div class="content">
+  <div class="title">
+    <p>Join Our Subcribers List To Get Reguler Update</p>
+    <span>Subcribe Now. We Will send Best offer for your Trip</span>
+  </div>
+  <div class="input-email" >
+    <input type="text" placeholder="Enter your Email Here">
+    <button class="button-sub">Subcribe</button>
+  </div>
+  </div>
+</div>
+        <!-- footer -->
       <div class="footer">
         <div class="col-1">
           <h3><span class="logo">Go</span>Travel</h3>
@@ -225,13 +232,14 @@
           </div>
          
         </div>
-        <div class="col-2">
+        <div class="col-2-container">
+            <div class="col-2">
           <p class="title">Follow Us</p>
           <div>
-            <img src="/asset/icon/facebook.png" alt="" srcset="">
-            <img src="/asset/icon/instagram.png" alt="" srcset="">
-            <img src="/asset/icon/telegram.png" alt="" srcset="">
-            <img src="/asset/icon/twitter.png" alt="" srcset="">
+            <img src="/asset/icon/facebook.png" alt="">
+            <img src="/asset/icon/instagram.png" alt="">
+            <img src="/asset/icon/telegram.png" alt="">
+            <img src="/asset/icon/twitter.png" alt="">
           </div>
         </div>
         <div class="col-3">
@@ -242,7 +250,10 @@
         <p>indonesia</p>
         </div>
       </div>
+        </div>
+      
       <span  class="copy-right">© 2023 All Rights Reserved | Devlop by Putra </span>
-   
+      
+
   </body>
 </html>

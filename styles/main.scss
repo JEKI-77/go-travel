@@ -1,6 +1,7 @@
 @import "../partials/footer";
-@import "../partials//content";
-@import "../partials//header";
+@import "../partials/content";
+@import "../partials/header";
+
 
 * {
   margin: 0;
@@ -16,6 +17,7 @@ body, html {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  
 }
 
 .button {
@@ -23,4 +25,8 @@ body, html {
   color: white;
   padding: 0.5em 2em;
   border: none;
+  cursor: pointer;
+  &:hover{
+    background: #23b7a5;
+  }
 }

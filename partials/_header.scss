@@ -1,4 +1,6 @@
+@import "../styles/mixin.scss";
 $color-green: rgb(20, 166, 166);
+
 
 .header-top {
   
@@ -7,6 +9,10 @@ $color-green: rgb(20, 166, 166);
   height: 80px;
   width: 100%;
   position: fixed;
+  display: none;
+  @include md{
+    display: block;
+  }
 
   .sosmed {
     margin-top: -4.3em;
@@ -44,22 +50,32 @@ $color-green: rgb(20, 166, 166);
 
 .header-wrapper {
   position: fixed;
-  margin-left: 6em;
   min-width: 100%;
   margin-top: 3em;
+  @include md{
+    margin-left: 6em;
+
+  }
 }
 .header {
   z-index: 1;
   position: absolute;
   background: aliceblue;
   display: flex;
-  justify-content: space-between;
-  height: 5em;
+  justify-content: center;
   align-items: center;
+  height: 5em;
   padding: 2em;
-  width: 100%;
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
+  margin-top: -3em;
+  width: 100%;
+  @include md{
+    margin-top: 0;
+    justify-content: space-between;
+    max-width: 90%;
+   
+  }
 
   .logo-icon {
     font-size: 24px;
@@ -73,9 +89,12 @@ $color-green: rgb(20, 166, 166);
   }
 
   .nav {
-    display: flex;
+    display: none;
     justify-content: space-between;
     gap: 2em;
+    @include md{
+      display: flex;
+    }
   }
 
   .nav ul {
