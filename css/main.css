@@ -53,6 +53,13 @@
   gap: 0.5em;
 }
 
+.copy-right {
+  text-align: center;
+  background: #121723;
+  color: white;
+  font-size: 14px;
+}
+
 .content {
   flex: 1;
   width: 100%;
@@ -196,8 +203,7 @@
   display: flex;
   width: 100%;
   margin: auto;
-  height: 20rem;
-  margin-bottom: 4em;
+  height: 25rem;
 }
 .content .sub-container .input-email {
   width: 60%;
@@ -322,7 +328,7 @@
   list-style: none;
 }
 .header .nav li a {
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   color: rgb(58, 56, 53);
 }
