@@ -68,7 +68,11 @@ $color-green: rgb(20, 166, 166);
   @include md {
     margin-top: 0;
     justify-content: space-between;
-    max-width: 90%;
+    margin: auto;
+    max-width: 80%;
+  }
+  @include lg {
+    max-width: 85%;
   }
 
   .logo-icon {

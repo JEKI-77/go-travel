@@ -213,13 +213,18 @@
 }
 
 .packages-container {
+  display: flex;
+  flex-direction: column;
   gap: 1em;
   color: gray;
-  height: 600px;
-  max-width: 1200px;
-  margin: auto;
   margin-bottom: 4em;
-  width: 100%;
+  max-width: 450px;
+}
+@media only screen and (min-width: 768px) {
+  .packages-container {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
 .packages-container h2,
 .packages-container h3 {
@@ -232,34 +237,38 @@
   grid-column: span 4;
 }
 .packages-container .card {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  display: grid;
   gap: 1em;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .packages-container .card {
     grid-template-columns: repeat(4, 1fr);
+    margin-top: -10rem;
+    width: 1200px;
   }
 }
-.packages-container .card .card-2 {
+.packages-container .card .box-card {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.packages-container .card .card-3 {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.packages-container .card .card-4 {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 0.5em;
 }
 .packages-container .card img {
-  width: 20rem;
-  height: 15rem;
+  width: 150px;
+  height: 200px;
+}
+@media only screen and (min-width: 768px) {
+  .packages-container .card img {
+    width: 20rem;
+    height: 15rem;
+  }
 }
 .packages-container .card .price {
   display: flex;
   justify-content: space-between;
   margin: 0.5em;
   color: black;
+  width: 150px;
 }
 .packages-container .card .desciption {
   display: grid;
@@ -277,7 +286,6 @@
   color: white;
   padding: 0.5em 2em;
   border: none;
-  margin-left: 2em;
   margin-bottom: 1em;
   cursor: pointer;
 }
@@ -439,7 +447,13 @@
   .header {
     margin-top: 0;
     justify-content: space-between;
-    max-width: 90%;
+    margin: auto;
+    max-width: 80%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header {
+    max-width: 85%;
   }
 }
 .header .logo-icon {

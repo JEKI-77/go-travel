@@ -104,13 +104,16 @@
 }
 
 .packages-container {
+  display: flex;
+  flex-direction: column;
   gap: 1em;
   color: gray;
-  height: 600px;
-  max-width: 1200px;
-  margin: auto;
   margin-bottom: 4em;
-  width: 100%;
+  max-width: 450px;
+  @include md {
+    max-width: 1200px;
+    margin: auto;
+  }
 
   h2,
   h3 {
@@ -125,32 +128,29 @@
   }
 
   .card {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: grid;
     gap: 1em;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    @include md{
+    text-align: center;
+    @include md {
       grid-template-columns: repeat(4, 1fr);
+      margin-top: -10rem;
+      width: 1200px;
+      
+    }
 
-    }
-   
-    
-    
-    .card-2 {
+    .box-card{
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    
-    
-    }
-    .card-3 {
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-    .card-4 {
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      margin: 0.5em;
     }
 
     img {
-      width: 20rem;
-      height: 15rem;
+      width: 150px;
+      height: 200px;
+      @include md {
+        width: 20rem;
+        height: 15rem;
+      }
     }
 
     .price {
@@ -158,6 +158,9 @@
       justify-content: space-between;
       margin: 0.5em;
       color: black;
+      width: 150px;
+    }
+    @include md {
     }
 
     .desciption {
@@ -178,7 +181,6 @@
       color: white;
       padding: 0.5em 2em;
       border: none;
-      margin-left: 2em;
       margin-bottom: 1em;
       cursor: pointer;
       &:hover {
