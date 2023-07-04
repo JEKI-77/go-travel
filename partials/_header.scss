@@ -1,16 +1,14 @@
 @import "../styles/mixin.scss";
 $color-green: rgb(20, 166, 166);
 
-
 .header-top {
-  
   padding-top: 5em;
   background: $color-green;
   height: 80px;
   width: 100%;
   position: fixed;
   display: none;
-  @include md{
+  @include md {
     display: block;
   }
 
@@ -26,16 +24,14 @@ $color-green: rgb(20, 166, 166);
       gap: 1rem;
       font-size: 0.9em;
       color: white;
-      span{
+      span {
         margin-left: -1em;
         font-size: 12px;
       }
-      img{
+      img {
         height: 18px;
         border-radius: 50px;
         font-weight: bold;
-        
-
       }
     }
     .sign-in {
@@ -52,9 +48,8 @@ $color-green: rgb(20, 166, 166);
   position: fixed;
   min-width: 100%;
   margin-top: 3em;
-  @include md{
+  @include md {
     margin-left: 6em;
-
   }
 }
 .header {
@@ -70,11 +65,10 @@ $color-green: rgb(20, 166, 166);
   margin: auto;
   margin-top: -3em;
   width: 100%;
-  @include md{
+  @include md {
     margin-top: 0;
     justify-content: space-between;
     max-width: 90%;
-   
   }
 
   .logo-icon {
@@ -89,19 +83,73 @@ $color-green: rgb(20, 166, 166);
   }
 
   .nav {
-    display: none;
-    justify-content: space-between;
-    gap: 2em;
-    @include md{
+    margin-top: 7em;
+    width: 50%;
+    @include md {
+      width: 30%;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    }
+
+    .nav-bar-icon {
+      position: absolute;
+      margin-top: -4em;
+      width: 50%;
+      align-items: end;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      @include md {
+        display: none;
+      }
+      span {
+        width: 1.5em;
+        height: 4px;
+        background: #000;
+      }
+    }
+
+    .checkbox {
+      z-index: 1;
+      display: none;
+      margin-top: -4.7em;
+      position: absolute;
+      width: 95%;
+      height: 1.5em;
+      display: block;
+      @include md {
+        display: none;
+      }
+    }
+  }
+
+  .button {
+    @include md {
       display: flex;
     }
   }
 
   .nav ul {
-    color: gray;
     display: flex;
-    gap: 1em;
+    position: absolute;
+    height: 350px;
+    width: 60%;
+    text-align: center;
+    flex-direction: column;
+    color: gray;
+    gap: 4em;
     list-style: none;
+    background: #d29595;
+    padding-top: 2em;
+    @include md {
+      gap: 2em;
+      padding-top: 0;
+      display: flex;
+      flex-direction: row;
+      height: 0;
+    }
   }
 
   .nav li a {

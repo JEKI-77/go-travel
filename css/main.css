@@ -453,20 +453,77 @@
   font-size: 1.3em;
 }
 .header .nav {
-  display: none;
-  justify-content: space-between;
-  gap: 2em;
+  margin-top: 7em;
+  width: 50%;
 }
 @media only screen and (min-width: 768px) {
   .header .nav {
+    width: 30%;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+}
+.header .nav .nav-bar-icon {
+  position: absolute;
+  margin-top: -4em;
+  width: 50%;
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media only screen and (min-width: 768px) {
+  .header .nav .nav-bar-icon {
+    display: none;
+  }
+}
+.header .nav .nav-bar-icon span {
+  width: 1.5em;
+  height: 4px;
+  background: #000;
+}
+.header .nav .checkbox {
+  z-index: 1;
+  display: none;
+  margin-top: -4.7em;
+  position: absolute;
+  width: 95%;
+  height: 1.5em;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .header .nav .checkbox {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header .button {
     display: flex;
   }
 }
 .header .nav ul {
-  color: gray;
   display: flex;
-  gap: 1em;
+  position: absolute;
+  height: 350px;
+  width: 60%;
+  text-align: center;
+  flex-direction: column;
+  color: gray;
+  gap: 4em;
   list-style: none;
+  background: #d29595;
+  padding-top: 2em;
+}
+@media only screen and (min-width: 768px) {
+  .header .nav ul {
+    gap: 2em;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    height: 0;
+  }
 }
 .header .nav li a {
   font-size: 16px;
