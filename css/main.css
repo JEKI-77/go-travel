@@ -453,12 +453,13 @@
   font-size: 1.3em;
 }
 .header .nav {
-  margin-top: 7em;
-  width: 50%;
+  margin-top: -5em;
+  margin-right: -14em;
+  width: 100%;
+  position: relative;
 }
 @media only screen and (min-width: 768px) {
   .header .nav {
-    width: 30%;
     margin-top: 0;
     display: flex;
     align-items: center;
@@ -466,8 +467,9 @@
   }
 }
 .header .nav .nav-bar-icon {
+  z-index: 1;
   position: absolute;
-  margin-top: -4em;
+  margin-top: 2em;
   width: 50%;
   align-items: end;
   display: flex;
@@ -485,13 +487,14 @@
   background: #000;
 }
 .header .nav .checkbox {
-  z-index: 1;
-  display: none;
-  margin-top: -4.7em;
+  z-index: 999;
+  opacity: 0;
+  background: #000;
+  margin-top: 2.4em;
+  margin-left: -2px;
   position: absolute;
   width: 95%;
   height: 1.5em;
-  display: block;
 }
 @media only screen and (min-width: 768px) {
   .header .nav .checkbox {
@@ -504,25 +507,42 @@
   }
 }
 .header .nav ul {
+  z-index: -1;
   display: flex;
   position: absolute;
-  height: 350px;
-  width: 60%;
+  width: 100%;
   text-align: center;
   flex-direction: column;
   color: gray;
   gap: 4em;
   list-style: none;
-  background: #d29595;
-  padding-top: 2em;
+  background: #fff;
+  padding-top: 7em;
+  height: 100vh;
+  margin-left: -7em;
 }
 @media only screen and (min-width: 768px) {
   .header .nav ul {
-    gap: 2em;
+    margin-left: -13em;
+    background: #000;
+    width: 100%;
     padding-top: 0;
+    height: 0;
+    transition: 0;
+    gap: 2em;
     display: flex;
     flex-direction: row;
-    height: 0;
+    justify-content: end;
+  }
+}
+.header .slide {
+  opacity: 70%;
+  right: -100%;
+}
+@media only screen and (min-width: 768px) {
+  .header .slide {
+    opacity: 100%;
+    right: 0;
   }
 }
 .header .nav li a {
