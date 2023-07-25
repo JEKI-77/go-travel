@@ -168,6 +168,7 @@
   }
 }
 .discount .box {
+  z-index: -999;
   overflow: hidden;
 }
 .discount .box img {
@@ -543,7 +544,6 @@
 @media only screen and (min-width: 768px) {
   .header .nav ul {
     margin-left: -13em;
-    background: #000;
     width: 100%;
     padding-top: 0;
     height: 0;
